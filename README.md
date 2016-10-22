@@ -1,22 +1,26 @@
-# config-cli
+# configerator
 Node.js utility module for generating configuration files
+
+# Coming Soon!!!
+
+This module is not available yet.
 
 ## Installation
 ```
-npm i -g config-cli
+npm i -g configerator
 ```
 
 ## Usage
 ```
-config <config-module-name> args 
+configerator <config-module-name> args
 ```
 
 ### Configuration Modules
 
-By default, config-cli will resolve modules based on Node.js module resolution. For instance, if you try and use a particular configuration module, config-cli will try and resolve a module name of type "config-cli-<moduleName>" via Node.js. It is recommended that you install configuration modules globally.
+By default, configerator will resolve modules based on Node.js module resolution. For instance, if you try and use a particular configuration module, configerator will try and resolve a module name of type "configerator-<moduleName>" via Node.js. It is recommended that you install configuration modules globally.
 
 ```
-npm i -g config-cli-moduleName
+npm i -g configerator-moduleName
 ```
 
 Once installed, it is now available to the CLI as follows:

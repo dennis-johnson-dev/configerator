@@ -1,5 +1,5 @@
 {
-  "name": "config-cli",
+  "name": "configerator",
   "version": "1.0.0",
   "description": "Node.js utility module for generating configuration files",
   "main": "lib/index.js",
