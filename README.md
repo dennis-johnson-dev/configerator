@@ -28,3 +28,45 @@ Once installed, it is now available to the CLI as follows:
 ```
 configerator moduleName
 ```
+
+Each configuration module exposes two properties:
+
+type ConfigurationModule
+  generate: (options) => string;
+  output: {
+    filename: string;
+  }
+
+  `generate` returns the string to be written to the file
+
+  `output` returns an object that contains the `filename` property
+
+  The string will be written to the current directory with the filename specified in the configuration object.
+
+  #### Example
+
+  ```js
+    // configerator-example
+    export const generate(options) => {
+      return JSON.stringify({
+        truthy: options.truthy
+      }, null, 2)
+    };
+
+    export const output = {
+      filename: '.examplerc';
+    };
+
+    export const options = ['truthy'];
+  ```
+
+  ```js
+    configerator example --truthy
+  ```
+
+  ```
+    // ./.examplerc
+    {
+      truthy: true
+    }
+  ```

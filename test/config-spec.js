@@ -8,10 +8,10 @@ import * as Config from '../src/config';
 test('generates config file', t => {
   const configModule = {
     generate: (opts) => {
-      return {
+      return JSON.stringify({
         "plugins": [],
         "ignore": []
-      };
+      }, null, 2);
     },
     output: {
       filename: '.babelrc',
@@ -19,15 +19,16 @@ test('generates config file', t => {
     }
   };
 
-  Config.run(configModule, {});
+  return Config.run(configModule, {}).then(() => {
+    const result = JSON.parse(
+      fs.readFileSync(
+        path.resolve('../test-lib/.babelrc'), 'utf8'
+      )
+    );
 
-  const result = JSON.parse(
-    fs.readFileSync(
-      path.resolve('../test-lib/.babelrc'), 'utf8'
-    )
-  );
+    t.is(result.plugins.length, 0);
+  });
 
-  t.is(result.plugins.length, 0);
 });
 
 test.after('cleanup', t => {
