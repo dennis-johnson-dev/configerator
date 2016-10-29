@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/songawee/configerator#readme",
   "dependencies": {
-    "configerator": "0.0.5"
+    "configerator": "0.0.6"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
