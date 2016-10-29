@@ -70,7 +70,7 @@ type ConfigurationModule
     configerator example --truthy
   ```
 
-  ```
+  ```js
     // ./.examplerc
     {
       truthy: true
