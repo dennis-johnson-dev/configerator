@@ -1,6 +1,6 @@
 {
   "name": "configerator",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Node.js utility module for generating configuration files",
   "main": "lib/index.js",
   "scripts": {
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/songawee/configerator#readme",
   "dependencies": {
+    "mkdirp": "^0.5.1",
     "yargs": "^6.3.0"
   },
   "ava": {
@@ -36,7 +37,6 @@
     "ava": "^0.16.0",
     "babel-cli": "^6.16.0",
     "babel-preset-es2015": "^6.16.0",
-    "lerna": "2.0.0-beta.30",
-    "mkdirp": "^0.5.1"
+    "lerna": "2.0.0-beta.30"
   }
 }
