@@ -1,11 +1,12 @@
 {
   "name": "configerator",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Node.js utility module for generating configuration files",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src --out-dir lib",
     "clean": "rm -rf lib",
+    "prepublish": "npm run build",
     "start": "babel-node ./src",
     "test": "ava",
     "test:watch": "ava --watch"
