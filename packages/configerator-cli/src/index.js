@@ -17,13 +17,15 @@ const main = (moduleName) => {
   }
 
   let options = {};
-  module.options.forEach((option) => {
-    if (typeof yargs.argv[option] === 'undefined') {
-      return;
-    }
+  if (module.options) {
+    module.options.forEach((option) => {
+      if (typeof yargs.argv[option] === 'undefined') {
+        return;
+      }
 
-    options[option] = yargs.argv[option];
-  });
+      options[option] = yargs.argv[option];
+    });
+  }
 
   module.output.path = path.resolve('./')
   config.run(module, options).then(() => {

@@ -1,6 +1,6 @@
 {
   "name": "configerator",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Node.js utility module for generating configuration files",
   "main": "lib/index.js",
   "scripts": {
