@@ -26,5 +26,5 @@ npm i -g configerator-moduleName
 Once installed, it is now available to the CLI as follows:
 
 ```
-config moduleName
+configerator moduleName
 ```
