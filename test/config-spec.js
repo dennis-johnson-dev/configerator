@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import rimraf from 'rimraf';
 
-import * as Config from '../src/config';
+import * as Config from '../src';
 
 test('generates config file', t => {
   const configModule = {

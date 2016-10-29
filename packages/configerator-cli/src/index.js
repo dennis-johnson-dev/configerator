@@ -1,9 +1,13 @@
-import * as config from './config';
+import * as config from 'configerator';
 import path from 'path';
 import yargs from 'yargs';
 
-const moduleName = yargs.argv._[0];
-const main = () => {
+const main = (moduleName) => {
+  if (!moduleName) {
+    console.error('no config type given, please enter a valid config type');
+    return;
+  }
+
   let module;
   try {
     module = require(`configerator-${moduleName}`);
@@ -11,7 +15,6 @@ const main = () => {
     console.error('Cannot find module: ', `configerator-${moduleName}`);
     return;
   }
-
 
   let options = {};
   module.options.forEach((option) => {
@@ -28,4 +31,4 @@ const main = () => {
   });
 };
 
-main();
+main(yargs.argv._[0]);
