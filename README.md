@@ -3,7 +3,13 @@ Node.js utility module for generating configuration files
 
 ## Beta
 
-This is currently a beta version. Please use with caution.
+This is currently a beta version. Please use with caution. 
+
+### Reason to build this
+
+I like to try out new things and got tired of constantly looking up the various types of configuration files needed for new projects. For example, I typically various tools such as babel, webpack, eslint, etc. and they each of unique configuration files. I thought it would save some time to be able to quickly generate a config and then modify it as needed. 
+
+I also think it might be nice to be able to publish helpful configuration files to be shared with others. Saving your own configuration is as easy as publishing a new module and installing it globally. That way, when you set up new projects it's easy to get started with configuration of various tools you use.
 
 ## Installation
 ```
