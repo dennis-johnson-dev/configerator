@@ -1,9 +1,9 @@
 # configerator
 Node.js utility module for generating configuration files
 
-# Coming Soon!!!
+## Beta
 
-This module is not available yet.
+This is currently a beta version. Please use with caution.
 
 ## Installation
 ```
@@ -43,7 +43,7 @@ type ConfigurationModule
 
   The string will be written to the current directory with the filename specified in the configuration object.
 
-  #### Example
+#### Example
 
   ```js
     // configerator-example
