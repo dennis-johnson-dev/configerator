@@ -1,6 +1,6 @@
 {
   "name": "configerator-cli",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Node.js CLI utility module for generating configuration files",
   "main": "lib/index.js",
   "scripts": {
