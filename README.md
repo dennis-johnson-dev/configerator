@@ -1,10 +1,6 @@
 # configerator
 Node.js utility module for generating configuration files
 
-## Beta
-
-This is currently a beta version. Please use with caution. 
-
 ## Installation
 ```
 npm i -g configerator
